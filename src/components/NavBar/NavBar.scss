@@ -1,0 +1,43 @@
+.navbar {
+  width: 100%;
+  padding: 0.5rem 0rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
+
+  &__hamburger,
+  &__shop {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__hamburger {
+    left: 1.5rem;
+  }
+
+  &__shop {
+    right: 1.5rem;
+  }
+
+  &__logo {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      height: 40px; // Adjust as needed
+      object-fit: contain;
+    }
+  }
+
+  .icon {
+    cursor: pointer;
+    color: #333;
+  }
+}

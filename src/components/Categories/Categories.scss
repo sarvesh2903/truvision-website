@@ -1,0 +1,49 @@
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+}
+
+.category-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  font-size: 32px;
+  color: #1e3a8a; // Deep blue
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.category-label {
+  font-size: 1rem; /* Slightly bigger font size */
+  font-weight: 600; /* Bold text for better readability */
+  text-align: center;
+  color: #333;
+  text-transform: capitalize; /* Ensures the text looks neat */
+  letter-spacing: 0.5px; /* A little spacing between letters */
+  margin-top: 0.5rem; /* Add spacing from the icon */
+  transition: color 0.3s, transform 0.3s; /* Smooth transition on hover */
+
+  &:hover {
+    color: #1e3a8a; /* Change color on hover (blue theme) */
+    transform: scale(1.1); /* Slightly zoom in on hover */
+  }
+}
