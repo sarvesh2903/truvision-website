@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { FiShoppingBag } from "react-icons/fi";
 import "./Navbar.scss";
+import logoImg from "../../assets/logomain.png";
 import TopNavBar from "../DiscountTopBar/DiscountSection";
 
 const Navbar = () => {
@@ -23,7 +24,7 @@ const Navbar = () => {
         </div>
 
         <div className="navbar__logo">
-          <img src="src/assets/logomain.png" alt="VisionCare Logo" />
+          <img src={logoImg} alt="VisionCare Logo" />
         </div>
 
         <div className="navbar__shop" onClick={handleCartClick}>

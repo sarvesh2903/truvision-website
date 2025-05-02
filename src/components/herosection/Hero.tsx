@@ -1,13 +1,13 @@
 import Slider from "react-slick";
 import "./HeroSection.scss";
+// Import images correctly
+import shopImage from "../../assets/shopimage.jpg";
+import shopImage1 from "../../assets/shopimage1.png";
+import shopImage2 from "../../assets/shopimage2.png";
+import shopImage3 from "../../assets/shopimage3.png";
 
-const images = [
-  "src/assets/shopimage.jpg",
-  "src/assets/shopimage1.png",
-  "src/assets/shopimage2.png",
-  ,
-  "src/assets/shopimage3.png",
-];
+// Use the imports in an array
+const images = [shopImage, shopImage1, shopImage2, shopImage3];
 const HeroCarousel = () => {
   const settings = {
     dots: true,
